@@ -1,10 +1,13 @@
 # Developer Portfolio
 
 ## Table of contents
-* [General Info] (#general-info)
-* [Getting Started] (#getting-started)
-* [Technologies] (#technologies)
-* [Next Steps] (#next-steps)
+- [Developer Portfolio](#developer-portfolio)
+  - [Table of contents](#table-of-contents)
+  - [General Info](#general-info)
+  - [Getting Started](#getting-started)
+      - [*screenshot goes here*](#screenshot-goes-here)
+  - [Technologies](#technologies)
+  - [Next Steps](#next-steps)
 
 ## General Info
 This projects is a personal portfolio that serves as an online resume for potential recruiters and clients can easily find information about myself online and view my skills and projects.
