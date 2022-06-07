@@ -26,13 +26,14 @@ body {
   font-size: 24px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.2fr 1.4fr 1.1fr 1.3fr 1fr;
+  grid-template-rows: 80px 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-template-areas:
   "nav"
   "about"
   "skills"
   "work"
+  "resume"
   "contact";
 }
 
@@ -90,6 +91,11 @@ nav h1 {
 .work {
   background-color: #d8f3dc;
   grid-area: work;
+}
+
+.resume {
+  background-color: #b7e4c7;
+  grid-area: resume;
 }
 
 .contact {
