@@ -8,6 +8,7 @@
 
 /*------------------------ Cached Element References ------------------------*/
 
+menuBtnEl = document.querySelector("#menu-button");
 
 
 /*----------------------------- Event Listeners -----------------------------*/

@@ -25,3 +25,33 @@ body {
   margin: 0;
   font-size: 24px;
 }
+
+nav {
+  height: 80px;
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+  background-color: antiquewhite;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+#nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+
+#nav-menu {
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
+}
+
+#menu-button {
+  display: none;
+}
