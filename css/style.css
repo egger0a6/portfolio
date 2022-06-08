@@ -76,6 +76,7 @@ nav h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .about {
@@ -101,4 +102,11 @@ nav h1 {
 .contact {
   background-color: #95d5b2;
   grid-area: contact;
+}
+
+#about img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 50%;
 }
