@@ -39,47 +39,6 @@ body {
 nav {
   background-color: #52b788;
   box-shadow: 0 5px 5px gray;
-  margin-bottom: 10px;
-}
-
-/* nav {
-  width: 100vw;
-  position: fixed;
-  z-index: 1;
-  background-color: #52b788;
-}
-
-nav a {
-  text-decoration: none;
-  color: black;
-}
-
-nav h1 {
-  font-size: 34px;
-}
-
-#nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 20px;
-}
-
-#nav-menu {
-  font-size: 28px;
-  display: flex;
-  gap: 15px;
-  list-style-type: none;
-}
-
-#menu-button {
-  display: none;
-} */
-
-.flex-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 #about {
@@ -87,42 +46,29 @@ nav h1 {
   grid-area: about;
 }
 
-#about .flex-container {
-
-}
-
-.about img {
-  height: 40%;
-  width: 40%;
-}
-
-.about-title {
-  width: 30%;
-}
-
-.skills {
-  background-color: #b7e4c7;
-  grid-area: skills;
-}
-
-.work {
-  background-color: #d8f3dc;
-  grid-area: work;
-}
-
-.resume {
-  background-color: #b7e4c7;
-  grid-area: resume;
-}
-
-.contact {
-  background-color: #95d5b2;
-  grid-area: contact;
-}
-
 #about img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+  height: 35%;
+  width: 35%;
   border-radius: 50%;
+}
+
+#skills {
+  background-color: #b7e4c7;
+}
+
+#skills img {
+  height: 10%;
+  width: 10%;
+}
+
+#work {
+  background-color: #d8f3dc;
+}
+
+#resume {
+  background-color: #b7e4c7;
+}
+
+#contact {
+  background-color: #95d5b2;
 }

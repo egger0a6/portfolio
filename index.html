@@ -26,7 +26,7 @@
 </head>
 <body>
   <!-- Nav bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
     <div class="container-fluid">
       <a href="./index.html" class="navbar-brand">
         <h1>Zach Eggert</h1>
@@ -34,65 +34,90 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <ul class="nav justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#work">Work</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#resume">Resume</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#work">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resume">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
   <!-- About Section -->
-  <section id="about" class="about flex-container">
-    <img
-      src="./assets/images/about_me_portrait.jpg"
-      alt="zach eggert portrait"
-      class="about-img"
-    />
-    <div>
-      <h2 class="about-title">About Me</h2>
-      <p class="about-content">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
-        dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
-        inventore tempore minus nemo, iste ullam illo laboriosam maiores
-        repudiandae quos!
-      </p>
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img
+          src="./assets/images/about_me_portrait.jpg"
+          alt="zach eggert portrait"
+          class="about-img"
+          />
+        </div>
+        <div class="col">
+          <h2 class="about-title">About Me</h2>
+          <p class="about-content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
+            dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
+            inventore tempore minus nemo, iste ullam illo laboriosam maiores
+            repudiandae quos!
+          </p>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
   <!-- Skills section -->
-  <section id="skills" class="skills flex-container">
-    <h1>Skills</h1>
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+  <section id="skills">
+    <div class="container">
+      <div class="row"></div>
+        <h1>Skills</h1>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
+      </div>
+    </div>
   </section>
 
   <!-- Works section -->
-  <section id="work" class="work flex-container">
-    <h1>My Work</h1>
-    <div id="card-container">
+  <section id="work">
+    <div class="container">
+      <div class="row">
+        <h1>My Work</h1>
+        <div id="card-container">
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Resume section -->
-  <section id="resume" class="resume">
-    <h1>Resume</h1>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi doloremque assumenda provident iste laborum. A reiciendis ducimus nulla exercitationem. Atque ratione sapiente est illum saepe architecto numquam maxime alias quaerat?
+  <section id="resume">
+    <div class="container">
+      <div class="row">
+        <h1>Resume</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi doloremque assumenda provident iste laborum. A reiciendis ducimus nulla exercitationem. Atque ratione sapiente est illum saepe architecto numquam maxime alias quaerat?
+      </div>
+    </div>
   </section>
 
   <!-- Contact section -->
-  <section id="contact" class="contact flex-container">
-    <h1>Contact</h1>
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <h1>Contact</h1>
+      </div>
+    </div>
   </section>
 
   <!-- Scroll to top button-->
+  
 </body>
 </html>
