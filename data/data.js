@@ -1,10 +1,10 @@
 const projectData = [
   {
-    title: "Rock Paper Scissors",
+    title: "Tic-Tac-Toe",
     deployment: "https://tic-tac-toe-egger0a6.netlify.app/",
     image: "/assets/images/ttt.png",
     github: "https://github.com/egger0a6/ttt-weekend",
-    description: "A classic game used to settle disputes."
+    description: "X versus O, simple as."
   },
   {
     title: "Rock Paper Scissors",
