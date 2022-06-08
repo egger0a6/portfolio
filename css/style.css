@@ -24,25 +24,29 @@ body {
         Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   margin: 0;
   font-size: 24px;
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 80px 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-template-areas:
-  "nav"
   "about"
   "skills"
   "work"
   "resume"
-  "contact";
+  "contact"; */
 }
 
 nav {
+  background-color: #52b788;
+  box-shadow: 0 5px 5px gray;
+  margin-bottom: 10px;
+}
+
+/* nav {
   width: 100vw;
   position: fixed;
   z-index: 1;
   background-color: #52b788;
-  grid-area: nav;
 }
 
 nav a {
@@ -70,7 +74,7 @@ nav h1 {
 
 #menu-button {
   display: none;
-}
+} */
 
 .flex-container {
   display: flex;
@@ -78,9 +82,22 @@ nav h1 {
   justify-content: center;
 }
 
-.about {
+#about {
   background-color: #d8f3dc;
   grid-area: about;
+}
+
+#about .flex-container {
+
+}
+
+.about img {
+  height: 40%;
+  width: 40%;
+}
+
+.about-title {
+  width: 30%;
 }
 
 .skills {

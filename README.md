@@ -22,5 +22,7 @@ Project is created with:
 * JavaScript
 * HTML
 * CSS
+* Bootstrap 5.1
+* 
 
 ## Next Steps

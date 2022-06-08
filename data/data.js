@@ -15,7 +15,7 @@ const projectData = [
   }
 ]
 
-const skillsData = ["js", "html", "css"];
+const skillsData = ["js", "html", "css", "py"];
 
 export {
   projectData,
