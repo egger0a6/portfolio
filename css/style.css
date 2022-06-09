@@ -23,6 +23,7 @@ body {
   font-family: 'League Spartan', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
         Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   margin: 0;
+  padding-top: 40px;
   font-size: 24px;
   /* display: grid;
   grid-template-columns: 1fr;
@@ -38,22 +39,29 @@ body {
 
 nav {
   background-color: #52b788;
-  box-shadow: 0 5px 5px gray;
+  box-shadow: 0 4px 5px gray;
 }
 
 #about {
   background-color: #d8f3dc;
-  grid-area: about;
 }
 
-#about img {
-  height: 35%;
-  width: 35%;
+.about-img {
+  width: 100%;
   border-radius: 50%;
+}
+
+.about-title {
+  font-size: 6rem;
+  font-weight: 600;
 }
 
 #skills {
   background-color: #b7e4c7;
+}
+
+.skills-title {
+  text-align: center;
 }
 
 #skills img {
@@ -71,4 +79,8 @@ nav {
 
 #contact {
   background-color: #95d5b2;
+}
+
+@media screen and (max-width: 768px) {
+  body { padding-top: 30px; }
 }

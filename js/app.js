@@ -10,6 +10,8 @@ import {projectData, skillsData} from "../data/data.js";
 /*------------------------ Cached Element References ------------------------*/
 
 const menuBtnEl = document.querySelector("#menu-button");
+const skillsCardsOne = document.querySelector("#skills-cards-1");
+const skillsCardsTwo = document.querySelector("#skills-cards-2");
 const cardContainer = document.querySelector("#card-container");
 
 
@@ -26,6 +28,30 @@ function init() {
 }
 
 function render() {
+  createProjectCards();
+  createSkillCards();
+}
+
+function createSkillCards() {
+  skillsCardsOne.innerHTML = "";
+  skillsCardsTwo.innerHTML = "";
+  for (let i = 0; i < skillsData.length; i++) {
+    const skillCard = document.createElement("div");
+    skillCard.classList.add("col-lg-4", "mt-4")
+    skillCard.innerHTML =
+    `<div class="card" style="width: 18rem;">
+      <img src="/assets/icons/${skillsData[i]}.svg" class="card-img-top" alt="${skillsData[i]} icon">
+    </div>`
+    if (skillsCardsOne.childNodes.length < 3) {
+      skillsCardsOne.appendChild(skillCard);
+    }
+    else {
+      skillsCardsTwo.appendChild(skillCard);
+    }
+  }
+}
+
+function createProjectCards() {
   cardContainer.innerHTML = "";
   projectData.forEach((project) => appendProject(project));
 }
