@@ -39,8 +39,9 @@ function createSkillCards() {
     const skillCard = document.createElement("div");
     skillCard.classList.add("col-lg-4", "mt-4")
     skillCard.innerHTML =
-    `<div class="card" style="width: 18rem;">
-      <img src="/assets/icons/${skillsData[i]}.svg" class="card-img-top" alt="${skillsData[i]} icon">
+    `<div>
+      <img src="/assets/icons/${skillsData[i]}.svg" alt="${skillsData[i]} icon"
+      class="skill-icon skill-card">
     </div>`
     if (skillsCardsOne.childNodes.length < 3) {
       skillsCardsOne.appendChild(skillCard);
@@ -60,7 +61,7 @@ function appendProject(project) {
   const projCard = document.createElement("div");
   projCard.classList.add("col-lg-4", "mt-4");
   projCard.innerHTML =
-  `<div class="card" style="width: 18rem;">
+  `<div class="card">
     <img src="${project.image}" class="card-img-top" alt="screensshot of ${project.title}">
     <div class="card-body">
       <h5 class="card-title">${project.title}</h5>
