@@ -18,6 +18,11 @@ html {
 }
 
 body {
+  --card-text-color: black;
+  --box-shadow-color: rgb(51, 51, 51);
+  --default-card-bg-color: rgba(255, 255, 255, .5);
+  --contact-card-bg-color: rgba(255, 255, 255, 0.3);
+  --about-card-bg-color: rgba(255, 255, 255, 0.8);
   background-color: gray;
   /* Use a system font, if none are available use an available sans-sarif font */
   font-family: 'League Spartan', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -28,6 +33,14 @@ body {
   padding-top: 40px;
   font-size: 24px;
   color: white;
+}
+
+body.dark {
+  --card-text-color: white;
+  --box-shadow-color: rgb(201, 201, 201);
+  --default-card-bg-color: rgba(0, 0, 0, 0.5);
+  --contact-card-bg-color: rgba(0, 0, 0, 0.3);
+  --about-card-bg-color: rgba(0, 0, 0, 0.8);
 }
 
 .background {	
@@ -53,18 +66,26 @@ body {
 }
 
 nav {
-  box-shadow: 0 4px 5px rgb(59, 59, 59);
+  box-shadow: 0 4px 5px var(--box-shadow-color);
 }
 
 .about-img {
   width: 90%;
   border-radius: 50%;
-  box-shadow: 2px 2px 12px 5px rgb(51, 51, 51);
+  box-shadow: 2px 2px 12px 5px var(--box-shadow-color);
 }
 
 .about-title {
   font-size: 6rem;
   font-weight: 600;
+}
+
+#about p {
+  color: var(--card-text-color);
+}
+
+#about .default-card {
+  background-color: var(--about-card-bg-color);
 }
 
 .skills-title {
@@ -105,15 +126,15 @@ nav {
   padding: 0;
   margin: 0;
   border-radius: 2rem;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--contact-card-bg-color);
 }
 
 .default-card {
-  background-color: rgba(255, 255, 255, .5);
+  background-color: var(--default-card-bg-color);
   padding: 25px;
   margin: 15px;
   border-radius: 10px;
-  box-shadow: 2px 2px 12px 5px rgb(51, 51, 51);
+  box-shadow: 2px 2px 12px 5px var(--box-shadow-color);
 }
 
 @media screen and (max-width: 768px) {

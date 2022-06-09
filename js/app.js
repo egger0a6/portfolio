@@ -13,14 +13,18 @@ const menuBtnEl = document.querySelector("#menu-button");
 const skillsCardsOne = document.querySelector("#skills-cards-1");
 const skillsCardsTwo = document.querySelector("#skills-cards-2");
 const cardContainer = document.querySelector("#card-container");
+const lightDarkBtn = document.querySelector(".light-mode-icon");
+const body = document.querySelector("body");
+const navbar = document.querySelector("nav");
 
 
 /*----------------------------- Event Listeners -----------------------------*/
 
-
+lightDarkBtn.addEventListener("click", toggleLightDark);
 
 /*-------------------------------- Functions --------------------------------*/
 
+checkDarkPref();
 init();
 
 function init() {
@@ -71,4 +75,43 @@ function appendProject(project) {
     </div>
   </div>`;
   cardContainer.append(projCard);
+}
+
+function toggleLightDark (evt) {
+  body.className = (body.className === "dark") ? "" : "dark";
+
+  if (navbar.classList.contains("navbar-light")) {
+    navbar.style.backgroundColor = null;
+    navbar.classList.remove("navbar-light");
+    navbar.classList.add("navbar-dark", "bg-dark");
+  }
+  else {
+    navbar.classList.remove("navbar-dark", "bg-dark");
+    navbar.classList.add("navbar-light");
+    navbar.style.backgroundColor = "rgba(255, 255, 255, 0.9)";
+  }
+
+  if (lightDarkBtn.src.match("/assets/icons/lightswitch_on.png")) {
+    lightDarkBtn.src = "/assets/icons/lightswitch_off.png";
+  }
+  else {
+    lightDarkBtn.src = "/assets/icons/lightswitch_on.png";
+  }
+
+  const ghImgEl = document.querySelector(".gh-logo");
+  if (ghImgEl.src.match("/assets/icons/gh.svg")) {
+    ghImgEl.src = "./assets/icons/gh_invert.png";
+  }
+  else {
+    ghImgEl.src = "./assets/icons/gh.svg";
+  }
+}
+
+function checkDarkPref() {
+  if (
+    window.matchMedia("(prefers-color-scheme:dark)").matches &&
+    body.className !== "dark"
+  ) {
+    toggleLightDark();
+  }
 }
