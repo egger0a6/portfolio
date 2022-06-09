@@ -58,6 +58,7 @@ function createProjectCards() {
 
 function appendProject(project) {
   const projCard = document.createElement("div");
+  projCard.classList.add("col-lg-4", "mt-4");
   projCard.innerHTML =
   `<div class="card" style="width: 18rem;">
     <img src="${project.image}" class="card-img-top" alt="screensshot of ${project.title}">
