@@ -37,11 +37,11 @@ function createSkillCards() {
   skillsCardsTwo.innerHTML = "";
   for (let i = 0; i < skillsData.length; i++) {
     const skillCard = document.createElement("div");
-    skillCard.classList.add("col-lg-4", "mt-4")
+    skillCard.classList.add("col-lg-4", "mt-3")
     skillCard.innerHTML =
     `<div>
       <img src="/assets/icons/${skillsData[i]}.svg" alt="${skillsData[i]} icon"
-      class="skill-icon skill-card">
+      class="skill-icon default-card">
     </div>`
     if (skillsCardsOne.childNodes.length < 3) {
       skillsCardsOne.appendChild(skillCard);

@@ -8,9 +8,9 @@ const projectData = [
   },
   {
     title: "Rock Paper Scissors",
-    deployment: "",
-    image: "",
-    github: "",
+    deployment: "https://rock-paper-scissors-egger0a6.netlify.app",
+    image: "/assets/images/rps.jpg",
+    github: "https://github.com/egger0a6/rock-paper-scissors",
     description: "Rock...Paper...Scissors...Shoot!"
   }
 ]
