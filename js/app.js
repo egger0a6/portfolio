@@ -37,12 +37,12 @@ function createSkillCards() {
   skillsCardsTwo.innerHTML = "";
   for (let i = 0; i < skillsData.length; i++) {
     const skillCard = document.createElement("div");
-    skillCard.classList.add("col-lg-4", "mt-3")
+    skillCard.classList.add("col-lg-4", "mt-3", "d-flex", "justify-content-center");
     skillCard.innerHTML =
     `<div>
       <img src="/assets/icons/${skillsData[i]}.svg" alt="${skillsData[i]} icon"
       class="skill-icon default-card">
-    </div>`
+    </div>`;
     if (skillsCardsOne.childNodes.length < 3) {
       skillsCardsOne.appendChild(skillCard);
     }
@@ -69,6 +69,6 @@ function appendProject(project) {
       <a href=${project.deployment} class="btn btn-primary">See Live</a>
       <a href=${project.github} class="btn btn-secondary">GitHub Repo</a>
     </div>
-  </div>`
+  </div>`;
   cardContainer.append(projCard);
 }
