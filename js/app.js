@@ -65,12 +65,12 @@ function appendProject(project) {
   const projCard = document.createElement("div");
   projCard.classList.add("col-lg-4", "mt-4");
   projCard.innerHTML =
-  `<div class="card">
+  `<div class="card text-center">
     <img src="${project.image}" class="card-img-top" alt="screensshot of ${project.title}">
     <div class="card-body">
-      <h5 class="card-title">${project.title}</h5>
+      <h1 class="card-title">${project.title}</h1>
       <p class="card-text">${project.description}</p>
-      <a href=${project.deployment} class="btn btn-primary">See Live</a>
+      <a href=${project.deployment} class="btn btn-primary btn-lg">See Live</a>
       <a href=${project.github} class="btn btn-secondary">GitHub Repo</a>
     </div>
   </div>`;

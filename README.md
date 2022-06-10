@@ -14,8 +14,8 @@ This project is a personal portfolio that serves as an online resume so that pot
 *screenshot goes here*
 
 ## Getting Started
-*link to deployed portfolio goes here*  
-Project Planning: https://trello.com/b/aWx6TULX/personal-portfolio
+[Visit here](https://zach-eggert-portfolio.netlify.app)
+[Project Planning Trello Board](https://trello.com/b/aWx6TULX/personal-portfolio)
 
 ## Technologies
 Project is created with:
@@ -23,6 +23,5 @@ Project is created with:
 * HTML
 * CSS
 * Bootstrap 5.1
-* 
 
 ## Next Steps
