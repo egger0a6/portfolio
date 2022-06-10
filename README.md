@@ -11,7 +11,7 @@
 ## General Info
 This project is a personal portfolio that serves as an online resume so that potential recruiters and/or clients can easily find information about myself online, and view my skills and projects.
 
-![portfolio app screenshot](/assets/screenshots/portfolio-screenshot.png?raw=true "Optional Title")
+![portfolio app screenshot](/assets/screenshots/portfolio_screenshot.png?raw=true)
 
 ## Getting Started
 [Visit here](https://zach-eggert-portfolio.netlify.app)  
