@@ -9,18 +9,20 @@ import {projectData, skillsData} from "../data/data.js";
 
 /*------------------------ Cached Element References ------------------------*/
 
-const menuBtnEl = document.querySelector("#menu-button");
-const skillsCardsOne = document.querySelector("#skills-cards-1");
-const skillsCardsTwo = document.querySelector("#skills-cards-2");
+const skillsCards = document.querySelector("#skills-container");
 const cardContainer = document.querySelector("#card-container");
 const lightDarkBtn = document.querySelector(".light-mode-icon");
 const body = document.querySelector("body");
 const navbar = document.querySelector("nav");
+const scrollBtn = document.querySelector("#scroll-up");
+const scrollBtnImg = document.querySelector(".scroll-img");
+const ghImgEl = document.querySelector(".gh-logo");
 
 
 /*----------------------------- Event Listeners -----------------------------*/
 
 lightDarkBtn.addEventListener("click", toggleLightDark);
+scrollBtn.addEventListener("click" , scrollUp);
 
 /*-------------------------------- Functions --------------------------------*/
 
@@ -37,23 +39,17 @@ function render() {
 }
 
 function createSkillCards() {
-  skillsCardsOne.innerHTML = "";
-  skillsCardsTwo.innerHTML = "";
-  for (let i = 0; i < skillsData.length; i++) {
+  skillsCards.innerHTML = "";
+  skillsData.forEach((skill) => {
     const skillCard = document.createElement("div");
-    skillCard.classList.add("col-lg-4", "mt-3", "d-flex", "justify-content-center");
+    skillCard.classList.add("col-lg-3", "d-flex", "justify-content-center");
     skillCard.innerHTML =
     `<div>
-      <img src="/assets/icons/${skillsData[i]}.svg" alt="${skillsData[i]} icon"
+      <img src="/assets/icons/${skill}.svg" alt="${skill} icon"
       class="skill-icon default-card">
     </div>`;
-    if (skillsCardsOne.childNodes.length < 3) {
-      skillsCardsOne.appendChild(skillCard);
-    }
-    else {
-      skillsCardsTwo.appendChild(skillCard);
-    }
-  }
+    skillsCards.appendChild(skillCard);
+  });
 }
 
 function createProjectCards() {
@@ -102,13 +98,21 @@ function toggleLightDark (evt) {
     lightDarkBtn.src = "/assets/icons/lightswitch_on.png";
   }
 
-  const ghImgEl = document.querySelector(".gh-logo");
   if (ghImgEl.src.match("/assets/icons/gh.svg")) {
     ghImgEl.src = "./assets/icons/gh_invert.png";
   }
   else {
     ghImgEl.src = "./assets/icons/gh.svg";
   }
+
+  if (scrollBtnImg.src.match("/assets/icons/uparrow.png")) {
+    console.log("here1")
+    scrollBtnImg.src = "./assets/icons/uparrow_invert.png";
+  }
+  else {
+    scrollBtnImg.src = "./assets/icons/uparrow.png";
+  }
+
 }
 
 function checkDarkPref() {
@@ -120,17 +124,10 @@ function checkDarkPref() {
   }
 }
 
-// function appendProject(project) {
-//   const projCard = document.createElement("div");
-//   projCard.classList.add("col-lg-4", "mt-4");
-//   projCard.innerHTML =
-//   `<div class="card text-center">
-//     <img src="${project.image}" class="card-img-top" alt="screensshot of ${project.title}">
-//     <div class="card-body">
-//       <h1 class="card-title">${project.title}</h1>
-//       <p class="card-text">${project.description}</p>
-//       <a href=${project.deployment} class="btn btn-primary">See Live</a>
-//       <a href=${project.github} class="btn btn-secondary">GitHub Repo</a>
-//     </div>
-//   </div>`;
-//   cardContainer.append(projCard);
+function scrollUp() {
+  window.scrollTo( {
+    top: 0,
+    left: 0,
+    behavior: "smooth"
+  });
+}
