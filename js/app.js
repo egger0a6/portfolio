@@ -65,13 +65,17 @@ function appendProject(project) {
   const projCard = document.createElement("div");
   projCard.classList.add("col-lg-4", "mt-4");
   projCard.innerHTML =
-  `<div class="card text-center">
-    <img src="${project.image}" class="card-img-top" alt="screensshot of ${project.title}">
-    <div class="card-body">
-      <h1 class="card-title">${project.title}</h1>
-      <p class="card-text">${project.description}</p>
-      <a href=${project.deployment} class="btn btn-primary btn-lg">See Live</a>
-      <a href=${project.github} class="btn btn-secondary">GitHub Repo</a>
+  `<div class="card">
+    <img src="${project.image}" alt="screensshot of ${project.title}" class="card-img">
+    <div class="card-img-overlay">
+      <div class="card-items text-center">
+        <h1 class="card-title">${project.title}</h1>
+        <p class="card-text">${project.description}</p>
+        <div class="card-links">
+          <a href=${project.deployment} class="btn" target="_blank">See Live</a>
+          <a href=${project.github} class="btn" target="_blank">GitHub Repo</a>
+        </div>
+      </div>
     </div>
   </div>`;
   cardContainer.append(projCard);
@@ -115,3 +119,18 @@ function checkDarkPref() {
     toggleLightDark();
   }
 }
+
+// function appendProject(project) {
+//   const projCard = document.createElement("div");
+//   projCard.classList.add("col-lg-4", "mt-4");
+//   projCard.innerHTML =
+//   `<div class="card text-center">
+//     <img src="${project.image}" class="card-img-top" alt="screensshot of ${project.title}">
+//     <div class="card-body">
+//       <h1 class="card-title">${project.title}</h1>
+//       <p class="card-text">${project.description}</p>
+//       <a href=${project.deployment} class="btn btn-primary">See Live</a>
+//       <a href=${project.github} class="btn btn-secondary">GitHub Repo</a>
+//     </div>
+//   </div>`;
+//   cardContainer.append(projCard);

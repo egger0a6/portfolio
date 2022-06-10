@@ -23,6 +23,8 @@ body {
   --default-card-bg-color: rgba(255, 255, 255, .5);
   --contact-card-bg-color: rgba(255, 255, 255, 0.2);
   --about-card-bg-color: rgba(255, 255, 255, 0.8);
+  --a-hover: rgba(0, 0, 0, 0.8);
+  --a-text: white;
   --bg-url: url("/assets/images/bg.jpg");
   background-color: gray;
   /* Use a system font, if none are available use an available sans-sarif font */
@@ -42,6 +44,8 @@ body.dark {
   --default-card-bg-color: rgba(0, 0, 0, 0.5);
   --contact-card-bg-color: rgba(0, 0, 0, 0.2);
   --about-card-bg-color: rgba(0, 0, 0, 0.8);
+  --a-hover: rgba(255, 255, 255, .5);
+  --a-text: black;
   /* --bg-url: url("/assets/images/heidelberg_night.jpg"); */
 }
 
@@ -124,8 +128,48 @@ nav {
   border-radius: 10px;
 }
 
+.card-title {
+  font-size: 4rem;
+}
+
+.card img {
+  border-radius: 10px;
+}
+
+.card-items {
+  padding: 5rem;
+  color: rgb(0, 0, 0);
+  transition: .5s;
+  opacity: 0;
+}
+
+.card-text {
+  margin: 6rem;
+}
+
+.card a {
+  font-size: 2rem;
+  background: var(--default-card-bg-color);
+  color: var(--card-text-color);
+  border-radius: 5px;
+  border: solid 3px var(--card-text-color);
+}
+
+.card a:hover {
+  background: var(--a-hover);
+  color: var(--a-text);
+}
+
+.card:hover .card-img{
+  filter: blur(20px);
+}
+
+.card:hover .card-items{
+  opacity: 1;
+}
+
 #resume {
- margin: 5rem 5rem;
+  margin: 5rem 5rem;
 }
 
 .resume-title {
