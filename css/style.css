@@ -21,14 +21,15 @@ body {
   --card-text-color: black;
   --box-shadow-color: rgb(51, 51, 51);
   --default-card-bg-color: rgba(255, 255, 255, .5);
-  --contact-card-bg-color: rgba(255, 255, 255, 0.3);
+  --contact-card-bg-color: rgba(255, 255, 255, 0.2);
   --about-card-bg-color: rgba(255, 255, 255, 0.8);
+  --bg-url: url("/assets/images/bg.jpg");
   background-color: gray;
   /* Use a system font, if none are available use an available sans-sarif font */
   font-family: 'League Spartan', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
         Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   background-attachment: fixed;
-  background: url("/assets/images/bg.jpg") no-repeat center center fixed;
+  background: var(--bg-url) no-repeat center center fixed;
   margin: 0;
   padding-top: 40px;
   font-size: 24px;
@@ -39,8 +40,9 @@ body.dark {
   --card-text-color: white;
   --box-shadow-color: rgb(201, 201, 201);
   --default-card-bg-color: rgba(0, 0, 0, 0.5);
-  --contact-card-bg-color: rgba(0, 0, 0, 0.3);
+  --contact-card-bg-color: rgba(0, 0, 0, 0.2);
   --about-card-bg-color: rgba(0, 0, 0, 0.8);
+  /* --bg-url: url("/assets/images/heidelberg_night.jpg"); */
 }
 
 .background {	
@@ -69,6 +71,14 @@ nav {
   box-shadow: 0 4px 5px var(--box-shadow-color);
 }
 
+#hero p{
+  font-size: 3rem;
+}
+
+.hero-title {
+  font-size: 6rem;
+}
+
 .about-img {
   width: 90%;
   border-radius: 50%;
@@ -76,8 +86,12 @@ nav {
 }
 
 .about-title {
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 600;
+}
+
+#about {
+  margin: 10rem 0;
 }
 
 #about p {
@@ -90,7 +104,7 @@ nav {
 
 .skills-title {
   text-align: center;
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .skill-icon {
@@ -100,7 +114,7 @@ nav {
 
 .work-title {
   text-align: center;
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 #resume {
@@ -109,12 +123,20 @@ nav {
 
 .resume-title {
   text-align: center;
+  font-size: 5rem;
+}
+
+#resume a {
+  color: var(--card-text-color);
   font-size: 4rem;
+  width: 100%;
+  background-color: var(--about-card-bg-color);
+  box-shadow: 2px 2px 12px 5px var(--box-shadow-color);
 }
 
 .contact-title {
   text-align: center;
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .contact-icon {

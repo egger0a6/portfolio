@@ -27,7 +27,7 @@
 <body>
   <div class="background">
   <!-- Navbar -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color:  gh-logo;">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: rgba(255, 255, 255, 0.9);">
     <div class="container-fluid">
       <img src="/assets/icons/lightswitch_on.png" alt="light/dark mode icon" class="light-mode-icon me-4">
       <a href="./index.html" class="navbar-brand">
@@ -58,10 +58,10 @@
     </div>
   </nav>
 
-  <!-- About Section -->
-  <section id="about">
-    <div class="container pt-4 mt-4">
-      <div class="row">
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container mt-5">
+      <div class="row align-items-center">
         <div class="col-lg-6">
           <img
           src="./assets/images/about_me_portrait.jpg"
@@ -69,7 +69,18 @@
           class="about-img"
           />
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 text-center">
+          <h1 class="hero-title text-center">Zach Eggert</h1>
+          <p>aspiring <span style="font-weight: bold;">Software Engineer<span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Section -->
+  <section id="about">
+    <div class="container pt-4 mt-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-">
           <h1 class="about-title text-center">About Me</h1>
           <p class="about-content default-card">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
@@ -106,9 +117,14 @@
   <section id="resume">
     <div class="container mt-5">
       <h1 class="resume-title">Resume</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat aliquam possimus ex consequuntur. Illo aspernatur magnam earum voluptatem nesciunt consectetur similique aliquam reiciendis vel, rerum unde eos perspiciatis quam? Voluptates.
-        </p>
+      <div class="row justify-content-center">
+        <div class="col-lg-2">
+          <a href="/assets/pdf/software-engineer-resume-example.pdf" target="_blank"
+          class="btn btn-light btn-lg">
+            View Here
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
