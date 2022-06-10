@@ -14,7 +14,7 @@ This project is a personal portfolio that serves as an online resume so that pot
 *screenshot goes here*
 
 ## Getting Started
-[Visit here](https://zach-eggert-portfolio.netlify.app)
+[Visit here](https://zach-eggert-portfolio.netlify.app)  
 [Project Planning Trello Board](https://trello.com/b/aWx6TULX/personal-portfolio)
 
 ## Technologies
