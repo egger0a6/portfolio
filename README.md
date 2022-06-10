@@ -11,7 +11,7 @@
 ## General Info
 This project is a personal portfolio that serves as an online resume so that potential recruiters and/or clients can easily find information about myself online, and view my skills and projects.
 
-*screenshot goes here*
+![portfolio app screenshot](/assets/screenshots/portfolio-screenshot.png?raw=true "Optional Title")
 
 ## Getting Started
 [Visit here](https://zach-eggert-portfolio.netlify.app)  
@@ -25,3 +25,5 @@ Project is created with:
 * Bootstrap 5.1
 
 ## Next Steps
+* animate skills icons
+* Animate scroll-up icon to pulse when user has scrolled to bottom of the page.
