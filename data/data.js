@@ -1,5 +1,12 @@
 const projectData = [
   {
+    title: "Dota 2 Hero Guides",
+    deployment: "https://dota2-hero-guides.herokuapp.com/",
+    image: "/assets/images/dota_home_page.png",
+    github: "https://github.com/egger0a6/Dota2-Hero-Guides",
+    description: "Create Hero guides for Dota 2."
+  },
+  {
     title: "Tic-Tac-Toe",
     deployment: "https://tic-tac-toe-egger0a6.netlify.app/",
     image: "/assets/images/ttt.png",
