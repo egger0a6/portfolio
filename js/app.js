@@ -62,7 +62,7 @@ function appendProject(project) {
   projCard.classList.add("col-lg-4", "mt-4");
   projCard.innerHTML =
   `<div class="card">
-    <img src="${project.image}" alt="screensshot of ${project.title}" class="card-img">
+    <img src="${project.image}" alt="screenshot of ${project.title}" class="card-img">
     <div class="card-img-overlay">
       <div class="card-items text-center">
         <h1 class="card-title">${project.title}</h1>
