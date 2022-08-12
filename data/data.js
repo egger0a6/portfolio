@@ -1,5 +1,19 @@
 const projectData = [
   {
+    title: "Sole-Poll",
+    deployment: "https://sole-poll.herokuapp.com/",
+    image: "/assets/images/sole_poll.png",
+    github: "https://github.com/egger0a6/sole-poll",
+    description: "Create simple polls with this app"
+  },
+  {
+    title: "Squad Swap",
+    deployment: "https://squad-swap.netlify.app/",
+    image: "/assets/images/squad_swap.png",
+    github: "https://github.com/egger0a6/squad-swap",
+    description: "Ecommerce proof of idea app"
+  },
+  {
     title: "Dota 2 Hero Guides",
     deployment: "https://dota2-hero-guides.herokuapp.com/",
     image: "/assets/images/dota_home_page.png",
